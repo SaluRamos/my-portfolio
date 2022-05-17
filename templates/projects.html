@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" container="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/projects.css">
+    </head>
+    <body>
+        <header id="header">
+            <header_title id="header_title">
+                Project: {{ project_title }}
+            </header_title>
+            <btn onclick="window.open('/', '_self');" id="header_home" ></btn>
+        </header>
+        <container id="container">
+            <content id="content">
+                teste doido<br>
+                <!--source padrão de imagens
+                    src="../images/projects/{{ project_title }}/images/id.webp" -->
+                <img src="../images/about/me.webp" loading="lazy">
+            </content>
+        </container>
+        <footer>
+            Github link:<br>
+            Total lines:<br>
+            Tags:<br>
+            Status:<br>
+        </footer>
+        <!-- talvez não precise de javascript -->
+        <!-- <script src="../javascipt/load_project_container.js" defer=""></script> -->
+    </body>
+</html>

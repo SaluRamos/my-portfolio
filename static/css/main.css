@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-touch-callout: none; /*iOS Safari*/
+    -webkit-user-select: none; /*Safari*/
+    -khtml-user-select: none; /*Konqueror HTML*/
+    -moz-user-select: none; /*Old versions of Firefox*/
+    -ms-user-select: none; /*Internet Explorer/Edge*/
+    user-select: none;
+    overflow-x: hidden;
+    overflow-y: overlay;
+    max-width: calc(100vw - (100vw - 100%));
+    position: relative;
+}
+
+cant_select{
+    user-select: none;
+}
+
+a{
+    color: rgba(255, 162, 0, 0.7);
+    font-style: bold;
+    text-decoration: none;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    box-shadow: inset 100px 0 0 0 #ffffff;
+    color: black;
+}
+
+@font-face{
+    font-family: "honey_notes";
+    src: url("../fonts/honey notes.ttf");
+    font-display: swap;
+}
+
+@font-face{
+    font-family: "mustica_pro";
+    src: url("../fonts/mustica pro.otf");
+    font-display: swap;
+}
+
+@font-face{
+    font-family: "salma_alfasans";
+    src: url("../fonts/salma alfasans.otf");
+    font-display: swap;
+}

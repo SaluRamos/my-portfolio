@@ -1,0 +1,106 @@
+#containers{
+    display: grid;
+    grid-template-columns:7vw 86vw 7vw;
+    grid-template-rows: auto auto;
+}
+
+.container_title{
+    grid-column: 2;
+    font-size: 60px;
+    font-family: salma_alfasans;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#about{
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#about > photo{
+    grid-column: 1;
+    grid-row: 1;
+    --photo_height: 420px;
+    height: calc(calc(1610/1019) * var(--photo_height));
+    width: var(--photo_height);
+    background-image: url("../images/about/me-pencil.webp");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 0.6rem black);
+}
+
+#about > text{
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 20px;
+    font-family: salma_alfasans;
+    text-align: center;
+}
+
+#skills{
+    grid-column: 2;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.skill{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px auto auto;
+    justify-items: center;
+    align-items: center;
+    padding: 1px;
+    margin-bottom: 20px;
+    /* border-right: 2px solid black; */
+
+}
+
+.skill_photo{
+    grid-column: 1;
+    grid-row: 1;
+    height: 100px;
+    width: 100px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.skill_name{
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 20px;
+    font-family: salma_alfasans;
+    text-align: center;
+}
+
+.skill_rate{
+    grid-column: 1;
+    grid-row: 3;
+    font-size: 20px;
+    font-family: salma_alfasans;
+    text-align: center;
+}
+
+@media (max-width: 1220px){
+
+    #about{
+        grid-template-columns: 100% !important;
+    }
+
+    #about > text{
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+    }
+
+    #about > photo{
+        background-image: none !important;
+    }
+
+}

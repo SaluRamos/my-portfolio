@@ -1,0 +1,50 @@
+#header{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+    background-color: black;
+    align-items: center;
+}
+
+#header_title{
+    grid-column: 1;
+    grid-row: 1;
+    color: white;
+    font-size: 30px;
+    font-family: salma_alfasans;
+    text-align: center;
+}
+
+#header_home{
+    grid-column: 1;
+    grid-row: 1;
+    height: 50px;
+    width: 50px;
+    background-image: url("../images/header/home.webp");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 7vw 86vw 7vw;
+    grid-template-rows: auto;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#content{
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 20px;
+    font-family: salma_alfasans;
+    text-align: center;
+}
+
+img, iframe{
+    border: 3px solid black;
+}

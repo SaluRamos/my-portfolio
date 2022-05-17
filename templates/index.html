@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/containers.css">
+        <link rel="stylesheet" href="images/header/github_colorful.webp">
+        <link rel="stylesheet" href="images/header/gitlab_colorful.webp">
+        <link rel="stylesheet" href="images/header/linkedin_colorful.webp">
+        <link rel="stylesheet" href="images/header/instagram_colorful.webp">
+        <title>Salu Ramos Portfolio</title>
+    </head>
+    <body>
+        <header id="header">
+            <header_info id="header_info">
+                <name id="header_name">Salu C. Ramos</name>
+                <carrer id="header_carrer">FULLSTACK DEVELOPER ⚙️</carrer>
+                <email id="header_email" >saluc.ramos@outlook.com<cant_select> ✉️</cant_select></email>
+                <curriculum id="header_curriculum">take a look at my curriculum vitae <a href="/curriculum_vitae">here.</a> 📋</curriculum>
+            </header_info>
+            <header_socials id="header_socials">
+                <links id="social_medias">
+                    <btn id="github" onclick="window.open('https://github.com/SaluRamos', '_blank');"></btn>
+                    <btn id="gitlab" onclick="window.open('https://gitlab.com/SaluRamos', '_blank');"></btn>
+                    <btn id="linkedin" onclick="window.open('https://www.linkedin.com/in/salu-ramos/', '_blank');"></btn>
+                    <btn id="instagram" onclick="window.open('https://www.instagram.com/salu_ramos/', '_blank');"></btn>
+                </links>
+            </header_socials>
+        </header>
+        <containers id="containers">
+            <about id="about">
+                <photo alt="my photo"></photo>
+                <text>
+                    <about_title style="font-size: 60px; font-family: salma_alfasans; color: black;">ABOUT ME / GOALS</about_title><br><br>
+                    I started programming in 2013 with C# to create games in Unity Game Engine (at my 13 years old), along the way I've
+                    used several computational tools and programming languages to develop my projects.
+                    In the course of pandemic I found myself passionate about coding again (my hobby for years), and I am in the process of internal transfer at
+                    my college (Universidade Tecnológica Federal do Paraná) to computer engineering course.
+                    I am looking for an opportunity to start a career in software development.
+                </text>
+            </about>
+            <skills_title class="container_title" style="grid-row: 2;">SKILLS</skills_title>
+            <skills id="skills">
+                {% for i in skills %}
+                    <div class="skill">
+                        <skill_photo class="skill_photo" style="background-image: url('../images/skills/{{i.name}}.webp');"></skill_photo>
+                        <skill_name class="skill_name">{{i.name}}</skill_name>
+                        <skill_rate class="skill_rate">{{i.rate}}</skill_rate>
+                    </div>
+                {% endfor %}
+            </skills>
+            <projects_title class="container_title" style="grid-row: 4;">PROJECTS</projects_title>
+            <projects id="projects">
+                
+            </projects>
+        </containers>
+    </body>
+</html>

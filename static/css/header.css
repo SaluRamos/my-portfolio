@@ -1,0 +1,178 @@
+#header{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: auto;
+    background-color: black;
+}
+
+#header_info{
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+}
+
+#header_name{
+    grid-column: 1;
+    grid-row: 1;
+    color: white;
+    font-size: 70px;
+    font-family: salma_alfasans;
+    margin-left: 10px;
+}
+
+#header_carrer{
+    grid-column: 1;
+    grid-row: 2;
+    color: white;
+    font-size: 20px;
+    margin-left: 13px;
+    font-style: bold;
+    font-family: salma_alfasans;
+    margin-bottom: 3px;
+}
+
+#header_email{
+    grid-column: 1;
+    grid-row: 3;
+    color: white;
+    font-size: 20px;
+    margin-left: 13px;
+    font-style: bold;
+    font-family: salma_alfasans;
+    margin-bottom: 3px;
+    user-select: text;
+}
+
+#header_curriculum{
+    grid-column: 1;
+    grid-row: 4;
+    color: white;
+    font-size: 20px;
+    margin-left: 13px;
+    font-style: bold;
+    font-family: salma_alfasans;
+    margin-bottom: 20px;
+}
+
+#header_socials{
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#social_medias{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#github{
+    height: 60px;
+    width: 60px;
+    background-image: url("../images/header/github.webp");
+    background-size: 100%;
+    background-position-x: 0px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#github:hover{
+    border-color: rgba(0, 0, 0, 1);
+    border-radius: 25%;
+    background-image: url("../images/header/github_colorful.webp");
+    background-position-x: 120px;
+}
+
+#gitlab{
+    height: 60px;
+    width: 60px;
+    background-image: url("../images/header/gitlab.webp");
+    background-size: 100%;
+    background-position-x: 0px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#gitlab:hover{
+    border-color: rgba(0, 0, 0, 1);
+    border-radius: 25%;
+    background-image: url("../images/header/gitlab_colorful.webp");
+    background-position-x: 120px;
+}
+
+#linkedin{
+    height: 60px;
+    width: 60px;
+    background-image: url("../images/header/linkedin.webp");
+    background-size: 100%;
+    background-position-x: 0px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#linkedin:hover{
+    border-color: rgba(0, 0, 0, 1);
+    border-radius: 25%;
+    background-image: url("../images/header/linkedin_colorful.webp");
+    background-position-x: 120px;
+}
+
+#instagram{
+    height: 60px;
+    width: 60px;
+    background-image: url("../images/header/instagram.webp");
+    background-size: 100%;
+    background-position-x: 0px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#instagram:hover{
+    border-color: rgba(0, 0, 0, 1);
+    border-radius: 25%;
+    background-image: url("../images/header/instagram_colorful.webp");
+    background-position-x: 120px;
+}
+
+@media (max-width: 950px){
+
+    #header{
+        grid-template-columns: 100vw !important;
+        grid-template-rows: auto auto !important;
+        justify-items: center !important;
+    }
+
+    #header_info{
+        justify-content: center !important;
+    }
+
+    #header_socials{
+        grid-column: 1 !important;
+        grid-row: 2 !important;
+        width: 80% !important;
+    }
+
+    #social_medias{
+        margin-top: 10px !important;
+        margin-bottom: 20px !important;
+        width: 100vw !important;
+    }
+
+    #header_curriculum{
+        margin-bottom: 3px !important;
+    }
+
+}

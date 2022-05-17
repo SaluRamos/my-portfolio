@@ -1,0 +1,24 @@
+English;3.5
+HTML 5;4
+CSS 3;3
+Java;2
+Javascript;3
+Python;5
+CSharp;3
+Batch file;4
+Solidity;3
+SSL;4
+Unity;4
+Blender;2.5
+SQL;4
+PostgreSQL;4
+Redis;STUDYING ✍🏻
+Heroku;4
+AWS;STUDYING ✍🏻
+Git;5
+Scrum;3
+Kanban;3
+SEO;2.5
+Docker;STUDYING ✍🏻
+PaintdotNET;5
+API REST;5
