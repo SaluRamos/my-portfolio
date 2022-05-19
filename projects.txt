@@ -1,0 +1,1 @@
+telegram bot;utiliza .sessions do telegram para realizar diversas operações;versão estável, não terminado;green;python,csv,telethon

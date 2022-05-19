@@ -3,23 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="nofollow, noindex, noarchive, nocache, noydir, nosnippet, noimageindex, nositelinkssearchbox">
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/header_and_footer.css">
         <link rel="stylesheet" href="css/containers.css">
-        <link rel="stylesheet" href="images/header/github_colorful.webp">
-        <link rel="stylesheet" href="images/header/gitlab_colorful.webp">
-        <link rel="stylesheet" href="images/header/linkedin_colorful.webp">
-        <link rel="stylesheet" href="images/header/instagram_colorful.webp">
-        <title>Salu Ramos Portfolio</title>
+        <title>Salu C. Ramos Portfolio</title>
     </head>
     <body>
         <header id="header">
             <header_info id="header_info">
-                <name id="header_name">Salu C. Ramos</name>
-                <carrer id="header_carrer">FULLSTACK DEVELOPER ⚙️</carrer>
-                <email id="header_email" >saluc.ramos@outlook.com<cant_select> ✉️</cant_select></email>
-                <curriculum id="header_curriculum">take a look at my curriculum vitae <a href="/curriculum_vitae">here.</a> 📋</curriculum>
+                <name id="header_name">Salu Ramos</name>
+                <carrer id="header_carrer">FULLSTACK DEVELOPER</carrer>
+                <email id="header_email" >saluc.ramos@outlook.com</email>
+                <curriculum id="header_curriculum">take a look at my curriculum vitae <a href="/curriculum_vitae">here.</a></curriculum>
             </header_info>
             <header_socials id="header_socials">
                 <links id="social_medias">
@@ -45,17 +42,32 @@
             <skills_title class="container_title" style="grid-row: 2;">SKILLS</skills_title>
             <skills id="skills">
                 {% for i in skills %}
-                    <div class="skill">
-                        <skill_photo class="skill_photo" style="background-image: url('../images/skills/{{i.name}}.webp');"></skill_photo>
-                        <skill_name class="skill_name">{{i.name}}</skill_name>
-                        <skill_rate class="skill_rate">{{i.rate}}</skill_rate>
-                    </div>
+                <div class="skill">
+                    <skill_photo class="skill_photo" style="background-image: url('../images/skills/{{i.name}}.webp');"></skill_photo>
+                    <skill_name class="skill_name">{{ i.name }}</skill_name>
+                    <skill_rate class="skill_rate">{{ i.rate }}</skill_rate>
+                </div>
                 {% endfor %}
             </skills>
             <projects_title class="container_title" style="grid-row: 4;">PROJECTS</projects_title>
             <projects id="projects">
-                
+                {% for i in projects %}
+                <div class="project" onclick="window.open('/projects/TELEGRAM BOT', '_self');">
+                    <project_title class="project_title">{{ i.name }}</project_title>
+                    <project_description class="project_description">{{ i.description }}</project_description>
+                    <project_status class="project_status">
+                        <status_circle style="border-color: {{ i.status_color}}; background-color: {{ i.status_color}};"></status_circle>
+                        &nbsp;{{ i.status }}
+                    </project_status>
+                    <project_technologies class="project_technologies">
+                        {% for w in i.technologies %}
+                        <technologie>{{ w }}</technologie>
+                        {% endfor %}
+                    </project_technologies>
+                </div>
+                {% endfor %}
             </projects>
+            <experience_title class="container_title" style="grid-row: 6;">EXPERIENCE</experience_title>
         </containers>
     </body>
 </html>

@@ -9,24 +9,24 @@
     </head>
     <body>
         <header id="header">
-            <header_title id="header_title">
-                Project: {{ project_title }}
-            </header_title>
             <btn onclick="window.open('/', '_self');" id="header_home" ></btn>
+            <header_title id="header_title">Project: {{ project_title }}</header_title>
         </header>
         <container id="container">
             <content id="content">
-                teste doido<br>
+                teste 1<br>
                 <!--source padrão de imagens
                     src="../images/projects/{{ project_title }}/images/id.webp" -->
-                <img src="../images/about/me.webp" loading="lazy">
+                <img src="../images/about/me.webp" loading="lazy" draggable="false"><br>
+                teste 2<br><br>
+                Github link:<br>
+                Total lines:<br>
+                Tags:<br>
+                Status:<br>
             </content>
         </container>
-        <footer>
-            Github link:<br>
-            Total lines:<br>
-            Tags:<br>
-            Status:<br>
+        <footer id="footer">
+            footer
         </footer>
         <!-- talvez não precise de javascript -->
         <!-- <script src="../javascipt/load_project_container.js" defer=""></script> -->

@@ -1,6 +1,6 @@
 #header{
     display: grid;
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns: 30vw 70vw;
     grid-template-rows: auto;
     background-color: black;
 }
@@ -20,6 +20,7 @@
     font-size: 70px;
     font-family: salma_alfasans;
     margin-left: 10px;
+    filter: drop-shadow(0 0 0.1rem white);
 }
 
 #header_carrer{
@@ -62,7 +63,6 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
-    justify-content: center;
     align-items: center;
 }
 
@@ -74,7 +74,7 @@
 #github{
     height: 60px;
     width: 60px;
-    background-image: url("../images/header/github.webp");
+    background-image: url("../../images/header/github.webp");
     background-size: 100%;
     background-position-x: 0px;
     border: 3px solid rgb(255, 255, 255);
@@ -86,14 +86,14 @@
 #github:hover{
     border-color: rgba(0, 0, 0, 1);
     border-radius: 25%;
-    background-image: url("../images/header/github_colorful.webp");
+    background-image: url("../../images/header/github_colorful.webp");
     background-position-x: 120px;
 }
 
 #gitlab{
     height: 60px;
     width: 60px;
-    background-image: url("../images/header/gitlab.webp");
+    background-image: url("../../images/header/gitlab.webp");
     background-size: 100%;
     background-position-x: 0px;
     border: 3px solid rgb(255, 255, 255);
@@ -105,14 +105,14 @@
 #gitlab:hover{
     border-color: rgba(0, 0, 0, 1);
     border-radius: 25%;
-    background-image: url("../images/header/gitlab_colorful.webp");
+    background-image: url("../../images/header/gitlab_colorful.webp");
     background-position-x: 120px;
 }
 
 #linkedin{
     height: 60px;
     width: 60px;
-    background-image: url("../images/header/linkedin.webp");
+    background-image: url("../../images/header/linkedin.webp");
     background-size: 100%;
     background-position-x: 0px;
     border: 3px solid rgb(255, 255, 255);
@@ -124,14 +124,14 @@
 #linkedin:hover{
     border-color: rgba(0, 0, 0, 1);
     border-radius: 25%;
-    background-image: url("../images/header/linkedin_colorful.webp");
+    background-image: url("../../images/header/linkedin_colorful.webp");
     background-position-x: 120px;
 }
 
 #instagram{
     height: 60px;
     width: 60px;
-    background-image: url("../images/header/instagram.webp");
+    background-image: url("../../images/header/instagram.webp");
     background-size: 100%;
     background-position-x: 0px;
     border: 3px solid rgb(255, 255, 255);
@@ -143,7 +143,7 @@
 #instagram:hover{
     border-color: rgba(0, 0, 0, 1);
     border-radius: 25%;
-    background-image: url("../images/header/instagram_colorful.webp");
+    background-image: url("../../images/header/instagram_colorful.webp");
     background-position-x: 120px;
 }
 
@@ -155,6 +155,26 @@
         justify-items: center !important;
     }
 
+    #header_name{
+        text-align: center !important;
+        margin: none !important;
+    }
+
+    #header_carrer{
+        text-align: center !important;
+        margin: none !important;
+    }
+
+    #header_email{
+        text-align: center !important;
+        margin: none !important;
+    }
+
+    #header_curriculum{
+        text-align: center !important;
+        margin: none !important;
+    }
+
     #header_info{
         justify-content: center !important;
     }
@@ -162,7 +182,7 @@
     #header_socials{
         grid-column: 1 !important;
         grid-row: 2 !important;
-        width: 80% !important;
+        width: 400px !important;
     }
 
     #social_medias{
